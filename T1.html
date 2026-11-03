@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Gospel of Christ Jesus</title>
+
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="script.js"></script>
+
+    <link rel="icon" type="image/png" href="assets/apple-touch-icon.png" />
+  </head>
+
+  <body>
+    <header>
+      <h1>My Devotional Blog</h1>
+
+      <nav>
+        <a href="index.html">Home</a>
+
+        <div class="dropdown">
+          <button class="dropbtn">Topics ▾</button>
+
+          <div class="dropdown-content">
+            <a href="T1.html">Gospel of Christ Jesus</a>
+            <a href="#">Peace of Mind</a>
+            <a href="#">Faith and Strength</a>
+            <a href="#">Daily Prayers</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- SESSION TITLE -->
+      <h1 id="sessionTitle">Loading...</h1>
+
+      <!-- SESSION CONTENT FROM JSON -->
+      <div id="sessionContent"></div>
+
+      <!-- COMMENTS -->
+      <section class="comments">
+        <h3>Leave a Comment</h3>
+
+        <input
+          type="text"
+          id="commentInput"
+          placeholder="Write your thoughts..."
+        />
+
+        <button onclick="addComment()">Post</button>
+
+        <div id="commentList"></div>
+      </section>
+    </main>
+
+    <footer>
+      <p>
+        © 2026 My Devotional Blog<br />
+        All Rights Reserved.
+      </p>
+    </footer>
+
+    <!-- LOAD SESSION JSON -->
+    <script></script>
+  </body>
+</html>

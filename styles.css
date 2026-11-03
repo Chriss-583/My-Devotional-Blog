@@ -1,0 +1,163 @@
+/* --- General Page Styling --- */
+body {
+  margin: 0;
+  font-family: "Times New Roman", serif;
+  background-color: #000; /* full black background */
+  color: #fff; /* white text everywhere */
+  line-height: 1.6;
+
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* --- Header Section --- */
+header {
+  background-color: #000; /* black header */
+  border-bottom: 1px solid #222; /* subtle border */
+  padding: 10px 20px;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between; /* heading left, nav right */
+  align-items: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 1.8em;
+  color: #fff;
+}
+
+/* --- Navigation --- */
+nav {
+  display: flex;
+  align-items: center;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 15px;
+  transition: background-color 0.3s;
+  border-radius: 10px;
+}
+
+nav a:hover {
+  background-color: #222; /* slight highlight */
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropbtn {
+  background: none;
+  border: none;
+  color: #fff;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right: 0;
+  background-color: #000;
+  border: 1px solid #222;
+  min-width: 160px;
+  z-index: 1;
+  border-radius: 10px;
+}
+
+.dropdown-content a {
+  display: block;
+  padding: 10px;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 10px;
+}
+
+.dropdown-content a:hover {
+  background-color: #222;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* --- Main Content --- */
+main {
+  padding: 20px;
+  max-width: 700px;
+  margin: auto;
+  /* margin-left: 50px; */
+  color: #fff;
+}
+main p {
+  font-size: 20px;
+}
+.picture {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  display: block;
+  margin: 20px auto;
+}
+.image_container {
+  text-align: center;
+  margin: 20px 0;
+}
+.description_container {
+  background-color: #222;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+/* --- Footer --- */
+footer {
+  text-align: center;
+  padding: 15px;
+  border-top: 1px solid #222;
+  margin-top: 40px;
+  color: #bbb;
+  font-size: 0.9em;
+}
+
+/* --- Comment Section --- */
+.comments {
+  margin-top: 30px;
+}
+
+.comments h3 {
+  color: #fff;
+}
+
+.comments input {
+  padding: 10px;
+  width: 80%;
+  border: 1px solid #333;
+  background: #000;
+  color: #fff;
+  margin-right: 5px;
+}
+
+.comments button {
+  padding: 10px 15px;
+  border: none;
+  background-color: #222;
+  color: #fff;
+  cursor: pointer;
+}
+
+.comments button:hover {
+  background-color: #333;
+}
+
+#commentList {
+  margin-top: 15px;
+  border-top: 1px solid #222;
+  padding-top: 10px;
+}
